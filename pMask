@@ -1,0 +1,14 @@
+Let(
+
+[
+
+password = Replace ( password ; start ; 1 ; "*" );
+start = start + 1
+
+]
+;
+
+Case( start  ≤ stop ; pMask(password ; stop ; start) ; password )
+
+
+)
